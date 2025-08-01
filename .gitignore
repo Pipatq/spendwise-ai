@@ -1,0 +1,51 @@
+# --- General / System Files ---
+# Environment variables
+# !! VERY IMPORTANT: Prevents secrets from being committed to the repository.
+.env
+.env.local
+.env.*.local
+
+# macOS generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows generated files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+
+# IDE and Editor directories
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Backend (Go) ---
+# Compiled executables
+*.exe
+*.out
+*.app
+/backend/tmp/
+
+# If you build the binary inside the backend folder
+/backend/backend
+/backend/main
+
+
+# --- Frontend (Node.js / Vite) ---
+# Dependencies
+/frontend/node_modules/
+
+# Build output folder
+/frontend/dist/
+
+# Log files
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*
+
+# Vite specific cache
+/frontend/.vite/
